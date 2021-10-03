@@ -1,0 +1,38 @@
+.same{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+.user-details .input-box input{
+  height: 20px;
+
+
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+.user-details .input-boxx input{
+  height:20px;
+
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+}
+form .button{
+   height: 5px;
+   margin: 25px
+ }
+form .button input{
+   color: #fff;
+   transition: all 0.3s ease;
+   width: 100%;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+ }

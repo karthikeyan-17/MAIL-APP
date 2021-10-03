@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <title>reg</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Sign Up</h1>
+      <form action="#" method="POST">
+        <div class="txt_field">
+          <input type="text" required name="name">
+          <span></span>
+          <label>Name</label>
+        </div>
+        <div class="txt_field">
+          <input type="email" required name="email">
+          <span></span>
+          <label>Email</label>
+        </div>
+        <div class="txt_field">
+          <input type="password" required name="pwd" minlength="6">
+          <span></span>
+          <label>Password</label>
+        </div>
+        <div class="txt_field">
+          <input type="date" required name="DOB">
+          <span></span>
+          <label>DOB</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required name="Gender">
+          <span></span>
+          <label>Gender</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required name="college">
+          <span></span>
+          <label>College</label>
+        </div>
+        <div class="signup_link">
+          Back to login page <a href="{{url_for('register')}}">Login</a>
+        </div>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="error">
+              <center>{{ message }}</center>
+            </div>
+            {% endfor %}
+        {% endif %}
+      {% endwith %}
+        <br>
+        <input type="submit" value="Register">
+
+      </form>
+    </div>
+
+  </body>
+</html>

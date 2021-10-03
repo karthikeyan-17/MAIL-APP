@@ -1,0 +1,14 @@
+Login
+Registering
+Profile
+Compose
+Inbox
+Sent
+View
+Logout
+Forwarding
+Attachments
+Deletion
+Search
+Reply
+Account Deletion
