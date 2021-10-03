@@ -1,1 +1,1 @@
-# MAIL-CLONE
+# MAIL-APP
